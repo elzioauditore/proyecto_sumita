@@ -1,0 +1,102 @@
+<!--
+
+
+SELECTOR {
+    PROPIEDAD: VALOR
+}
+
+Selector => Es el puente que comunica HTML con CSS. Con los selectores
+vamos a poder indicar que elementos HTML queremos estilizar . 
+
+Llaves {} => Va todo el codigo CSS.
+
+Propiedad => Es el nombre del estilo CSS.
+
+Valor => El valor que tomara la propiedad.
+
+Ejemplo:
+
+h1{
+    color: pink;
+}
+
+---------------------------------------------
+TIPOS DE SELECTORES - BASICOS & COMBINADORES
+----------------------------------------------
+
+--------------------
+SELECTORES BASICOS
+--------------------
+
+1. DE TIPO => div{...}
+2. DE CLASE => .
+3. DE ID => #id-elemento{...}
+4. DE ATRIBUTO => a[href=" "]{...}
+5. UNIVERSAL => *{...}
+-->
+
+<style>
+
+    *{
+        color: white;
+        text-align: center;
+    }
+    
+
+    body{
+        background-color: black;
+        color: blue;
+        background-image: url("mia.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    #nuevesito {
+        color: rgb(204, 41, 41);
+    }
+
+    div{
+        color: rgb(255, 255, 255);
+    }
+
+    .titulo{
+        color: white;
+    }
+
+    #id-titulo{
+        color: red;
+    }
+
+    /* SELECTOR DE ATRIBUTO */
+
+
+    a[href="https://es.erome.com/"]{
+        color: blue;
+    }
+
+    /* SELECTOR DE CLASE */
+
+
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="titulo">HOLA</div>
+    <div id="id-titulo">HOLA</div>
+    <div id="nuevesito">hi</div>
+    <br>
+    <a href="https://es.stripchat.com/" target="_blank">LINK</a>
+    <br>
+    <br>
+</body>
+</html>
+
+<button style="color: rgb(214, 15, 15);" onclick="window.open('https://www.pornhub.com')">script</button>
+
